@@ -1,0 +1,31 @@
+{
+  "name": "anthonycecconato_3_23012021",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:watch": "sass --watch assets/scss/main.scss assets/css/main.css",
+    "css:prebuild": "sass ./assets/scss/main.scss ./assets/css/main.css && postcss ./assets/css/main.css --use autoprefixer -d ./assets/css/",
+    "css:build": "sass ./assets/scss/main.scss ./assets/css/main.min.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acecconato/AnthonyCecconato_3_23012021.git"
+  },
+  "author": "Anthony Cecconato",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acecconato/AnthonyCecconato_3_23012021/issues"
+  },
+  "homepage": "https://github.com/acecconato/AnthonyCecconato_3_23012021#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.3",
+    "postcss": "^8.2.4",
+    "postcss-cli": "^8.3.1",
+    "sass": "^1.32.5"
+  }
+}
