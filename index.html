@@ -7,9 +7,105 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
           integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
           crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+          integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/homepage.css">
 </head>
 <body>
+<header>
+    <h1>ohmyfood</h1>
+</header>
 
+<main>
+    <section class="heading">
+        <p class="heading__location"><i class="fas fa-map-marker-alt"></i> Paris, Belleville</p>
+        <h2>Réservez le menu qui vous convient</h2>
+        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+        <button class="btn btn--primary">Explorer nos restaurants</button>
+    </section>
+
+    <section class="steps">
+        <h2>Fonctionnement</h2>
+
+        <div class="steps__card">
+            <p><i class="fas fa-mobile-alt"></i> Choisissez un restaurant</p>
+        </div>
+        <div class="steps__card">
+            <p><i class="fas fa-list-ul"></i> Composez votre menu</p>
+        </div>
+        <div class="steps__card">
+            <p><i class="fas fa-store"></i> Dégustez au restaurant</p>
+        </div>
+    </section>
+
+    <section class="restaurants">
+        <h2>Restaurants</h2>
+
+        <article class="restaurants__card">
+            <figure itemscope itemtype="http://schema.org/Restaurant">
+                <img itemprop="image" src="assets/img/sm/la_palette_du_gout-576.jpg"
+                     alt="La palette du gout - Ménilmontant"/>
+                <figcaption>
+                    <h3 itemprop="name">La palette du goût</h3>
+                    <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                        <span itemprop="streetAddress">Ménilmontant</span>
+                    </p>
+                    <button class="btn btn--like"><i class="far fa-heart"></i></button>
+                </figcaption>
+            </figure>
+            <div class="restaurants__flag">Nouveau</div>
+        </article>
+
+        <article class="restaurants__card">
+            <figure itemscope itemtype="http://schema.org/Restaurant">
+                <img itemprop="image" src="assets/img/sm/la_note_enchantee-576.jpg" alt="La note enchantée - Charonne"/>
+                <figcaption>
+                    <h3 itemprop="name">La note enchantée</h3>
+                    <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                        <span itemprop="streetAddress">Charonne</span>
+                    </p>
+                    <button class="btn btn--like"><i class="far fa-heart"></i></button>
+                </figcaption>
+            </figure>
+            <div class="restaurants__flag">Nouveau</div>
+        </article>
+
+        <article class="restaurants__card">
+            <figure itemscope itemtype="http://schema.org/Restaurant">
+                <img itemprop="image" src="assets/img/sm/a_la_francaise-576.jpg" alt="À la française - Cité Rouge"/>
+                <figcaption>
+                    <h3 itemprop="name">À la française</h3>
+                    <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                        <span itemprop="streetAddress">Cité Rouge</span>
+                    </p>
+                    <button class="btn btn--like"><i class="far fa-heart"></i></button>
+                </figcaption>
+            </figure>
+        </article>
+
+        <article class="restaurants__card">
+            <figure itemscope itemtype="http://schema.org/Restaurant">
+                <img itemprop="image" src="assets/img/sm/le_delice_des_sens-576.jpg"
+                     alt="Le délice des sens - Folie-Méricourt"/>
+                <figcaption>
+                    <h3 itemprop="name">Le délice des sens</h3>
+                    <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                        <span itemprop="streetAddress">Folie-Méricourt</span>
+                    </p>
+                    <button class="btn btn--like"><i class="far fa-heart"></i></button>
+                </figcaption>
+            </figure>
+        </article>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="#"><strong><i class="fas fa-utensils"></i> Proposez un restaurant</strong></a></li>
+            <li><a href="#"><strong><i class="fas fa-hands-helping"></i> Devenir partenaire</strong></a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </footer>
+</main>
 </body>
 </html>
