@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ohmyfood</title>
+    <meta name="description" content="Commandez vos repas en ligne. Composez votre menu et réduisez votre temps d'attente
+    dans les restaurants ; vos menus sont préparés à l'avance !">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
           integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
           crossorigin="anonymous"/>
@@ -17,88 +19,93 @@
 </header>
 
 <main>
-    <section class="heading">
+    <section id="heading">
         <p class="heading__location"><i class="fas fa-map-marker-alt"></i> Paris, Belleville</p>
         <h2>Réservez le menu qui vous convient</h2>
         <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-        <button class="btn btn--primary">Explorer nos restaurants</button>
+        <a class="btn btn--primary">Explorer nos restaurants</a>
     </section>
 
-    <section class="steps">
+    <section id="steps">
         <h2>Fonctionnement</h2>
 
-        <div class="steps__card">
-            <p><i class="fas fa-mobile-alt"></i> Choisissez un restaurant</p>
-        </div>
-        <div class="steps__card">
-            <p><i class="fas fa-list-ul"></i> Composez votre menu</p>
-        </div>
-        <div class="steps__card">
-            <p><i class="fas fa-store"></i> Dégustez au restaurant</p>
-        </div>
+        <ol>
+            <li><i class="fas fa-mobile-alt"></i> Choisissez un restaurant</li>
+            <li><i class="fas fa-list-ul"></i> Composez votre menu</li>
+            <li><i class="fas fa-store"></i> Dégustez au restaurant</li>
+        </ol>
     </section>
 
-    <section class="restaurants">
+    <section id="restaurants">
         <h2>Restaurants</h2>
 
         <article class="restaurants__card">
-            <figure itemscope itemtype="http://schema.org/Restaurant">
-                <img itemprop="image" src="assets/img/sm/la_palette_du_gout-576.jpg"
-                     alt="La palette du gout - Ménilmontant"/>
-                <figcaption>
-                    <h3 itemprop="name">La palette du goût</h3>
-                    <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                        <span itemprop="streetAddress">Ménilmontant</span>
-                    </p>
-                    <button class="btn btn--like"><i class="far fa-heart"></i></button>
-                </figcaption>
-            </figure>
-            <div class="restaurants__flag">Nouveau</div>
+            <a href="#">
+                <div class="restaurants__flag">Nouveau</div>
+                <figure itemscope itemtype="http://schema.org/Restaurant">
+                    <img itemprop="image" src="assets/img/sm/la_palette_du_gout-576.jpg"
+                         alt="La palette du gout - Ménilmontant"/>
+                    <figcaption>
+                        <h3 itemprop="name">La palette du goût</h3>
+                        <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                            <span itemprop="streetAddress">Ménilmontant</span>
+                        </p>
+                        <button class="btn btn--like"><i class="far fa-heart"></i></button>
+                    </figcaption>
+                </figure>
+            </a>
         </article>
 
         <article class="restaurants__card">
-            <figure itemscope itemtype="http://schema.org/Restaurant">
-                <img itemprop="image" src="assets/img/sm/la_note_enchantee-576.jpg" alt="La note enchantée - Charonne"/>
-                <figcaption>
-                    <h3 itemprop="name">La note enchantée</h3>
-                    <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                        <span itemprop="streetAddress">Charonne</span>
-                    </p>
-                    <button class="btn btn--like"><i class="far fa-heart"></i></button>
-                </figcaption>
-            </figure>
-            <div class="restaurants__flag">Nouveau</div>
+            <a href="#">
+                <div class="restaurants__flag">Nouveau</div>
+                <figure itemscope itemtype="http://schema.org/Restaurant">
+                    <img itemprop="image" src="assets/img/sm/la_note_enchantee-576.jpg" alt="La note enchantée - Charonne"/>
+                    <figcaption>
+                        <h3 itemprop="name">La note enchantée</h3>
+                        <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                            <span itemprop="streetAddress">Charonne</span>
+                        </p>
+                        <button class="btn btn--like"><i class="far fa-heart"></i></button>
+                    </figcaption>
+                </figure>
+            </a>
         </article>
 
         <article class="restaurants__card">
-            <figure itemscope itemtype="http://schema.org/Restaurant">
-                <img itemprop="image" src="assets/img/sm/a_la_francaise-576.jpg" alt="À la française - Cité Rouge"/>
-                <figcaption>
-                    <h3 itemprop="name">À la française</h3>
-                    <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                        <span itemprop="streetAddress">Cité Rouge</span>
-                    </p>
-                    <button class="btn btn--like"><i class="far fa-heart"></i></button>
-                </figcaption>
-            </figure>
+            <a href="#">
+                <figure itemscope itemtype="http://schema.org/Restaurant">
+                    <img itemprop="image" src="assets/img/sm/a_la_francaise-576.jpg" alt="À la française - Cité Rouge"/>
+                    <figcaption>
+                        <h3 itemprop="name">À la française</h3>
+                        <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                            <span itemprop="streetAddress">Cité Rouge</span>
+                        </p>
+                        <button class="btn btn--like"><i class="far fa-heart"></i></button>
+                    </figcaption>
+                </figure>
+            </a>
         </article>
 
         <article class="restaurants__card">
-            <figure itemscope itemtype="http://schema.org/Restaurant">
-                <img itemprop="image" src="assets/img/sm/le_delice_des_sens-576.jpg"
-                     alt="Le délice des sens - Folie-Méricourt"/>
-                <figcaption>
-                    <h3 itemprop="name">Le délice des sens</h3>
-                    <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                        <span itemprop="streetAddress">Folie-Méricourt</span>
-                    </p>
-                    <button class="btn btn--like"><i class="far fa-heart"></i></button>
-                </figcaption>
-            </figure>
+            <a href="#">
+                <figure itemscope itemtype="http://schema.org/Restaurant">
+                    <img itemprop="image" src="assets/img/sm/le_delice_des_sens-576.jpg"
+                         alt="Le délice des sens - Folie-Méricourt"/>
+                    <figcaption>
+                        <h3 itemprop="name">Le délice des sens</h3>
+                        <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                            <span itemprop="streetAddress">Folie-Méricourt</span>
+                        </p>
+                        <button class="btn btn--like"><i class="far fa-heart"></i></button>
+                    </figcaption>
+                </figure>
+            </a>
         </article>
     </section>
 
     <footer>
+        <h2>ohmyfood</h2>
         <ul>
             <li><a href="#"><strong><i class="fas fa-utensils"></i> Proposez un restaurant</strong></a></li>
             <li><a href="#"><strong><i class="fas fa-hands-helping"></i> Devenir partenaire</strong></a></li>
