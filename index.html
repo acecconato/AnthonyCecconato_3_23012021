@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
           integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
           crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
           integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/homepage.css">
@@ -19,89 +22,95 @@
 </header>
 
 <main>
-    <section id="heading">
-        <p class="heading__location"><i class="fas fa-map-marker-alt"></i> Paris, Belleville</p>
-        <h2>Réservez le menu qui vous convient</h2>
-        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-        <a class="btn btn--primary">Explorer nos restaurants</a>
+    <section id="heading" class="heading">
+        <div class="heading__location">
+            <p><i class="fas fa-map-marker-alt"></i> Paris, Belleville</p>
+        </div>
+        <div class="heading__content">
+            <h2>Réservez le menu qui vous convient</h2>
+            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <a class="btn">Explorer nos restaurants</a>
+        </div>
     </section>
 
-    <section id="steps">
+    <section id="steps" class="steps">
         <h2>Fonctionnement</h2>
 
-        <ol>
-            <li><i class="fas fa-mobile-alt"></i> Choisissez un restaurant</li>
-            <li><i class="fas fa-list-ul"></i> Composez votre menu</li>
-            <li><i class="fas fa-store"></i> Dégustez au restaurant</li>
+        <ol class="steps__cards">
+            <li class="steps__cards--1"><i class="fas fa-mobile-alt"></i> Choisissez un restaurant</li>
+            <li class="steps__cards--2"><i class="fas fa-list-ul"></i> Composez votre menu</li>
+            <li class="steps__cards--3"><i class="fas fa-store"></i> Dégustez au restaurant</li>
         </ol>
     </section>
 
-    <section id="restaurants">
-        <h2>Restaurants</h2>
+    <section id="restaurants" class="restaurants">
+        <div class="restaurants__content">
+            <h2>Restaurants</h2>
 
-        <article class="restaurants__card">
-            <a href="#">
-                <div class="restaurants__flag">Nouveau</div>
-                <figure itemscope itemtype="http://schema.org/Restaurant">
-                    <img itemprop="image" src="assets/img/sm/la_palette_du_gout-576.jpg"
-                         alt="La palette du gout - Ménilmontant"/>
-                    <figcaption>
-                        <h3 itemprop="name">La palette du goût</h3>
-                        <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                            <span itemprop="streetAddress">Ménilmontant</span>
-                        </p>
+            <article class="restaurants__card">
+                <a href="#">
+                    <div class="restaurants__flag">Nouveau</div>
+                    <div class="restaurants__image">
+                        <img src="assets/img/sm/la_palette_du_gout-576.jpg"
+                             alt="La palette du gout - Ménilmontant"/>
+                    </div>
+                    <div class="restaurants__text">
+                        <h3>La palette du goût</h3>
+                        <p>Ménilmontant</p>
                         <button class="btn btn--like"><i class="far fa-heart"></i></button>
-                    </figcaption>
-                </figure>
-            </a>
-        </article>
+                    </div>
+                </a>
+            </article>
 
-        <article class="restaurants__card">
-            <a href="#">
-                <div class="restaurants__flag">Nouveau</div>
-                <figure itemscope itemtype="http://schema.org/Restaurant">
-                    <img itemprop="image" src="assets/img/sm/la_note_enchantee-576.jpg" alt="La note enchantée - Charonne"/>
-                    <figcaption>
-                        <h3 itemprop="name">La note enchantée</h3>
-                        <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                            <span itemprop="streetAddress">Charonne</span>
-                        </p>
-                        <button class="btn btn--like"><i class="far fa-heart"></i></button>
-                    </figcaption>
-                </figure>
-            </a>
-        </article>
+            <article class="restaurants__card">
+                <a href="#">
+                    <div class="restaurants__flag">Nouveau</div>
+                    <figure itemscope itemtype="http://schema.org/Restaurant">
+                        <img itemprop="image" src="assets/img/sm/la_note_enchantee-576.jpg"
+                             alt="La note enchantée - Charonne"/>
+                        <figcaption>
+                            <h3 itemprop="name">La note enchantée</h3>
+                            <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                <span itemprop="streetAddress">Charonne</span>
+                            </p>
+                            <button class="btn btn--like"><i class="far fa-heart"></i></button>
+                        </figcaption>
+                    </figure>
+                </a>
+            </article>
 
-        <article class="restaurants__card">
-            <a href="#">
-                <figure itemscope itemtype="http://schema.org/Restaurant">
-                    <img itemprop="image" src="assets/img/sm/a_la_francaise-576.jpg" alt="À la française - Cité Rouge"/>
-                    <figcaption>
-                        <h3 itemprop="name">À la française</h3>
-                        <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                            <span itemprop="streetAddress">Cité Rouge</span>
-                        </p>
-                        <button class="btn btn--like"><i class="far fa-heart"></i></button>
-                    </figcaption>
-                </figure>
-            </a>
-        </article>
+            <article class="restaurants__card">
+                <a href="#">
+                    <figure itemscope itemtype="http://schema.org/Restaurant">
+                        <img itemprop="image" src="assets/img/sm/a_la_francaise-576.jpg"
+                             alt="À la française - Cité Rouge"/>
+                        <figcaption>
+                            <h3 itemprop="name">À la française</h3>
+                            <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                <span itemprop="streetAddress">Cité Rouge</span>
+                            </p>
+                            <button class="btn btn--like"><i class="far fa-heart"></i></button>
+                        </figcaption>
+                    </figure>
+                </a>
+            </article>
 
-        <article class="restaurants__card">
-            <a href="#">
-                <figure itemscope itemtype="http://schema.org/Restaurant">
-                    <img itemprop="image" src="assets/img/sm/le_delice_des_sens-576.jpg"
-                         alt="Le délice des sens - Folie-Méricourt"/>
-                    <figcaption>
-                        <h3 itemprop="name">Le délice des sens</h3>
-                        <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                            <span itemprop="streetAddress">Folie-Méricourt</span>
-                        </p>
-                        <button class="btn btn--like"><i class="far fa-heart"></i></button>
-                    </figcaption>
-                </figure>
-            </a>
-        </article>
+            <article class="restaurants__card">
+                <a href="#">
+                    <figure itemscope itemtype="http://schema.org/Restaurant">
+                        <img itemprop="image" src="assets/img/sm/le_delice_des_sens-576.jpg"
+                             alt="Le délice des sens - Folie-Méricourt"/>
+                        <figcaption>
+                            <h3 itemprop="name">Le délice des sens</h3>
+                            <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                <span itemprop="streetAddress">Folie-Méricourt</span>
+                            </p>
+                            <button class="btn btn--like"><i class="far fa-heart"></i></button>
+                        </figcaption>
+                    </figure>
+                </a>
+            </article>
+        </div>
     </section>
 
     <footer>
