@@ -7,4 +7,12 @@
   display: block;
   width: fit-content;
   font-size: 1.25rem;
+
+  &--like {
+    background: none;
+    color: black;
+    border: none;
+    width: auto;
+    padding: 0;
+  }
 }
