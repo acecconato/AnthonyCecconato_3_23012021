@@ -1,20 +1,60 @@
 .restaurants {
 
+  &__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
   &__card {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 30px;
     width: 100%;
     background: white;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px lightgray;
+
+    a {
+      height: inherit;
+      color: black;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+    }
   }
 
-  img {
+  &__image {
+    margin: 0;
+    height: 80%;
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    max-width: 100%;
+
+    img {
+      width: inherit;
+      max-width: inherit;
+      height: 100%;
+      object-fit: cover;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
   }
 
   &__text {
+    padding: 20px 15px;
+
     h3, p {
       margin: 0;
+    }
+
+    h3 {
+      //font-size: 1.5rem;
+    }
+
+    p {
+      //font-size: 1.4rem;
+      //font-weight: lighter;
+      //margin-top: 5px;
     }
 
     button {
