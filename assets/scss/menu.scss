@@ -1,1 +1,87 @@
-@import "global";
+@import "global",
+"components/menu-cards";
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+
+  h1 {
+  }
+
+  a {
+    position: absolute;
+    left: 20px;
+  }
+}
+
+main {
+  background: $bgLight;
+}
+
+.main-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.menu {
+  background: $bgLight;
+  border-top-left-radius: 50px;
+  position: relative;
+  bottom: 55px;
+  border-top-right-radius: 50px;
+  z-index: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+
+  .btn {
+    margin: 0 auto;
+  }
+
+  &__content {
+
+    @include container();
+    @include vertical-padding();
+
+    h3 {
+      text-transform: uppercase;
+      font-weight: normal;
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 50px;
+        position: absolute;
+        left: 0;
+        bottom: -7px;
+        border-bottom: 3px solid $thirdColor;
+      }
+    }
+  }
+
+  &__title {
+    @include d-flex(space-between);
+    flex-direction: row;
+    margin-bottom: 30px;
+
+    h2 {
+      &::first-letter {
+        text-transform: capitalize;
+      }
+
+      font-family: $titlesFont;
+      font-weight: normal;
+      margin: 0;
+    }
+
+    .btn--like {
+      margin-right: 25px;
+      font-size: 2rem;
+    }
+  }
+}
