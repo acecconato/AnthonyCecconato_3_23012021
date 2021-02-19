@@ -17,19 +17,31 @@ header {
 }
 
 main {
-  background: $bgLight;
+  margin-bottom: -55px;
 }
 
 .main-image {
   width: 100%;
   max-width: 100%;
-  height: auto;
-  max-height: 300px;
-  object-fit: cover;
+  height: 100%;
   z-index: 0;
+
+  img {
+    width: inherit;
+    max-width: 100%;
+    height: inherit;
+    max-height: 100%;
+    object-fit: cover;
+  }
+
+  @include from("md") {
+    height: 450px;
+    max-height: 450px;
+  }
 }
 
 .menu {
+  @include vertical-padding(0, 85px);
   background: $bgLight;
   border-top-left-radius: 50px;
   position: relative;
