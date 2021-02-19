@@ -19,3 +19,11 @@
   margin: 0 auto;
   max-width: 1100px;
 }
+
+@mixin from($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media all and (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+}

@@ -1,11 +1,14 @@
-/* Colors */
+/* COLORS */
 $primaryColor: #9356DC;
 $secondaryColor: #FF79DA;
 $thirdColor: #99E2D0;
 
-/* Backgrounds */
+/* BACKGROUND COLORS */
 $bgLight: #F6F6F6;
 
-/* Fonts */
+/* FONTS */
 $titlesFont: "Shrikhand", cursive;
 $textFont: "Roboto", sans-serif;
+
+/* BREAKPOINTS */
+$breakpoints: ("sm": 576px, "md": 768px, "lg": 992px, "xl": 1200, "xxl": 1400);

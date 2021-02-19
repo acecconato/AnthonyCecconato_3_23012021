@@ -15,6 +15,10 @@
 @import "layout/header",
 "layout/footer";
 
+* {
+  box-sizing: border-box;
+}
+
 img {
   width: 100%;
   height: auto;

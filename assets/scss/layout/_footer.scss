@@ -10,17 +10,25 @@
   ul {
     list-style: none;
     padding-left: 0;
+    display: flex;
+    flex-direction: column;
 
     li {
-      margin: 7px 0;
-
       a {
         color: white;
 
-        i {
-          width: 16px;
-          height: 16px;
-          margin-right: 7px;
+        strong {
+          display: flex;
+          flex-wrap: nowrap;
+          align-items: center;
+
+          i {
+            flex-basis: 25px;
+
+            &.fa-hands-helping {
+              font-size: 12px;
+            }
+          }
         }
       }
     }

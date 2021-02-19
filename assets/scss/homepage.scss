@@ -58,6 +58,12 @@ main {
     &__content {
       @include vertical-padding();
       @include container();
+      @include d-flex();
+
+      h2 {
+        align-self: flex-start;
+        flex-basis: 100%;
+      }
     }
   }
 }
