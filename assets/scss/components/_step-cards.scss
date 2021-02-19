@@ -1,0 +1,41 @@
+.steps {
+  &__cards {
+    padding-inline-start: 0;
+    list-style-type: none;
+    margin-left: 0;
+
+    li {
+      background: $bgLight;
+      border-radius: 20px;
+      box-shadow: 2px 3px 10px lightgrey;
+      padding: 25px 15px;
+      margin: 0 auto 28px auto;
+      width: 85%;
+      font-weight: bold;
+      font-size: 1.15rem;
+
+      i {
+        color: grey;
+        font-size: 1.25rem;
+        margin-right: 13px;
+      }
+    }
+
+    @for $i from 1 through 3 {
+      &--#{$i}::before {
+        content: "#{$i}";
+        position: relative;
+        left: -30px;
+        background: $primaryColor;
+        width: 28px;
+        height: 28px;
+        color: white;
+        display: inline-flex;
+        border-radius: 15px;
+        align-items: center;
+        justify-content: center;
+        font-weight: normal;
+      }
+    }
+  }
+}

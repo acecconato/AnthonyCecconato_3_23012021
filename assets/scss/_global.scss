@@ -6,8 +6,7 @@
 "abstracts/mixins";
 
 /* Base stuff */
-@import "base/fonts",
-"base/helper";
+@import "base/helper";
 
 /* Global components */
 @import "components/button";
@@ -15,3 +14,22 @@
 /* Layout-related sections */
 @import "layout/header",
 "layout/footer";
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}

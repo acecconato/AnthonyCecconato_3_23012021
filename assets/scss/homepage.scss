@@ -1,1 +1,69 @@
-@import "global";
+@import "global",
+"components/step-cards",
+"components/restaurants-cards";
+
+
+main {
+  width: 100%;
+  height: auto;
+  font-family: $textFont;
+
+  .heading {
+    text-align: center;
+    background: $bgLight;
+    padding-bottom: 50px;
+
+    &__location {
+      @include d-flex();
+      box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.5);
+      background: #EAEAEA;
+      font-weight: bold;
+      font-size: 1.30rem;
+      opacity: 0.8;
+
+      & i {
+        margin-right: 15px;
+      }
+    }
+
+    &__content {
+      @include container(80%);
+      @include vertical-padding(20px);
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.3rem;
+        opacity: 0.8;
+        font-weight: lighter;
+      }
+
+      .btn {
+        margin: 35px auto 0 auto;
+        width: 65%;
+      }
+    }
+  }
+
+  .steps {
+    @include container();
+    @include vertical-padding();
+  }
+
+  .restaurants {
+    background: $bgLight;
+
+    &__content {
+      @include vertical-padding();
+      @include container();
+      @include d-flex();
+
+      h2 {
+        align-self: flex-start;
+        flex-basis: 100%;
+      }
+    }
+  }
+}
