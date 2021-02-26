@@ -18,6 +18,9 @@
     margin-bottom: 20px;
     border-radius: 20px;
     overflow: hidden;
+    opacity: 0;
+    transform: translateY(15px);
+    transform-origin: top;
     @include box-shadow();
 
     @include from("lg") {
@@ -34,6 +37,15 @@
 
     h4, p {
       margin: 0;
+    }
+
+    /* Animation */
+    animation: fade-toggle 200ms ease-in-out forwards;
+
+    @for $i from 1 through 9 {
+      &--#{$i} {
+        animation-delay: (200ms - 40ms) * $i;
+      }
     }
   }
 
