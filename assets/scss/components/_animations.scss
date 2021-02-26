@@ -13,3 +13,30 @@
     visibility: hidden;
   }
 }
+
+@keyframes stroke-animation {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  10% {
+    stroke-dashoffset: 1550;
+  }
+  30% {
+    stroke-dashoffset: 3100;
+    fill: transparent;
+    stroke: $primaryColor;
+    stroke-width: 32;
+  }
+  40% {
+    fill: $primaryColor;
+  }
+  56% {
+    transform: scale(1.1);
+  }
+  100% {
+    stroke-dashoffset: 3100;
+    fill: $primaryColor;
+    stroke: $primaryColor;
+    transform: scale(1.1);
+  }
+}
