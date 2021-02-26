@@ -18,10 +18,12 @@
     box-shadow: none;
   }
 
-  transition: opacity 100ms ease-in, box-shadow 200ms ease-in;
-  &:hover {
-    opacity: 0.8;
-    @include box-shadow(6px, 6px, 15px, darkgrey);
-    transition: opacity 200ms ease-out, box-shadow 400ms ease-out;
+  &--primary {
+    transition: opacity 100ms ease-in, box-shadow 200ms ease-in;
+    &:hover {
+      opacity: 0.8;
+      @include box-shadow(6px, 6px, 15px, darkgrey);
+      transition: opacity 200ms ease-out, box-shadow 400ms ease-out;
+    }
   }
 }
