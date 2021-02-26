@@ -5,8 +5,9 @@
   background: rgb(255, 121, 218);
   background: linear-gradient(177deg, #ff79da 0%, #9356dc 93%, #9356dc 100%);
   display: table;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   text-align: center;
+  cursor: pointer;
   @include box-shadow();
 
   &--like {
@@ -16,6 +17,20 @@
     width: auto;
     padding: 0;
     box-shadow: none;
+    position: relative;
+
+    i {
+      font-size: 1.4em;
+    }
+
+    i::after {
+      content: "\f004";
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+      mix-blend-mode: normal;
+      color: red;
+    }
   }
 
   &--primary {
