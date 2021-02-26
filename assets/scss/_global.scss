@@ -9,7 +9,8 @@
 @import "base/helper";
 
 /* Global components */
-@import "components/button";
+@import "components/button",
+"components/animations";
 
 /* Layout-related sections */
 @import "layout/header",

@@ -2,6 +2,26 @@
 "components/step-cards",
 "components/restaurants-cards";
 
+.loading-spinner {
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  z-index: 10;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: loading-spinner 400ms 2s forwards;
+
+  .spinner {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid $primaryColor;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+}
 
 main {
   width: 100%;

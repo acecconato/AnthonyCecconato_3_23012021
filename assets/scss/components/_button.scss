@@ -17,4 +17,10 @@
     padding: 0;
     box-shadow: none;
   }
+
+  transition: opacity 100ms ease-in;
+  &:hover {
+    opacity: 0.8;
+    transition: opacity 200ms ease-out;
+  }
 }
