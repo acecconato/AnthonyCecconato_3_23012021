@@ -30,13 +30,27 @@
   40% {
     fill: $primaryColor;
   }
-  56% {
-    transform: scale(1.1);
-  }
   100% {
     stroke-dashoffset: 3100;
     fill: $primaryColor;
     stroke: $primaryColor;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  15% {
     transform: scale(1.1);
+  }
+  30% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
   }
 }

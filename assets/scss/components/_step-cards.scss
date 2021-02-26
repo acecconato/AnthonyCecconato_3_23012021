@@ -18,6 +18,17 @@
         color: grey;
         font-size: 1.25rem;
         margin-right: 13px;
+        transition: color 200ms ease-out;
+      }
+
+      transition: background 200ms ease-out;
+      &:hover {
+        background: #F5EDFF;
+        transition: background 450ms ease-out;
+        i {
+          color: $primaryColor;
+          transition: color 450ms ease-out;
+        }
       }
     }
 

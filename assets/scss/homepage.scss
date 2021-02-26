@@ -4,14 +4,16 @@
 
 .loading-spinner {
   width: 100%;
-  min-height: 100%;
-  position: absolute;
+  height: 100%;
+  position: fixed;
   z-index: 10;
   background: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: loading-spinner 400ms 2s forwards;
+  opacity: 0.9;
+  top: 0;
+  animation: loading-spinner #{random(3)}s forwards;
 
   .spinner {
     border: 16px solid #f3f3f3;
