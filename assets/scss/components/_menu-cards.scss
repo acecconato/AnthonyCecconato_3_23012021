@@ -42,11 +42,11 @@
     }
 
     /* Animation */
-    animation: fade-toggle 200ms ease-in-out forwards;
+    animation: fade-toggle 450ms ease-out forwards;
 
     @for $i from 1 through 9 {
       &--#{$i} {
-        animation-delay: (200ms - 40ms) * $i;
+        animation-delay: (200ms) * $i;
       }
     }
   }
