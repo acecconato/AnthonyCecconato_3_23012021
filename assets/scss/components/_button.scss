@@ -1,12 +1,13 @@
 .btn {
   border-radius: 30px;
-  padding: 20px 18px;
+  padding: 16px 50px;
   color: white;
   background: rgb(255, 121, 218);
   background: linear-gradient(177deg, #ff79da 0%, #9356dc 93%, #9356dc 100%);
-  display: block;
-  width: fit-content;
+  display: table;
   font-size: 1.25rem;
+  text-align: center;
+  @include box-shadow();
 
   &--like {
     background: none;
@@ -14,5 +15,6 @@
     border: none;
     width: auto;
     padding: 0;
+    box-shadow: none;
   }
 }

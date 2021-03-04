@@ -27,3 +27,7 @@
     }
   }
 }
+
+@mixin box-shadow($x: 2px, $y: 2px, $blur: 10px, $color: lightgray) {
+  box-shadow: $x $y $blur $color;
+}
