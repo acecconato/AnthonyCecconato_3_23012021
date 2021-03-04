@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass:watch": "sass assets/scss:assets/css --watch",
-    "sass:build": "sass assets/scss:assets/css --style compressed && postcss ./assets/css/*.css -u autoprefixer -r",
-    "serve": "serve index.html"
+    "sass:build": "sass assets/scss:assets/css --style compressed && postcss ./assets/css/*.css -u autoprefixer -r"
   },
   "repository": {
     "type": "git",
@@ -23,7 +22,6 @@
     "autoprefixer": "^10.2.4",
     "postcss": "^8.2.4",
     "postcss-cli": "^8.3.1",
-    "sass": "^1.32.6",
-    "serve": "^11.3.2"
+    "sass": "^1.32.6"
   }
 }

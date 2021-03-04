@@ -5,8 +5,9 @@
   background: rgb(255, 121, 218);
   background: linear-gradient(177deg, #ff79da 0%, #9356dc 93%, #9356dc 100%);
   display: table;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   text-align: center;
+  cursor: pointer;
   @include box-shadow();
 
   &--like {
@@ -16,5 +17,44 @@
     width: auto;
     padding: 0;
     box-shadow: none;
+
+    /* SVG */
+    fill: transparent;
+    stroke: black;
+    stroke-width: 20;
+    position: relative;
+
+    svg {
+      overflow: visible;
+
+      path {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 1550;
+        transform-origin: center;
+      }
+
+      &.heart-background {
+        position: absolute;
+        right: 0;
+        left: 0;
+        z-index: -1;
+        stroke: none;
+      }
+
+      &.heart-main:hover {
+        & path {
+          animation: stroke-animation 2s ease-in-out forwards, pulse 1.4s 0.8s;
+        }
+      }
+    }
+  }
+
+  &--primary {
+    transition: opacity 100ms ease-in, box-shadow 200ms ease-in;
+    &:hover {
+      opacity: 0.8;
+      @include box-shadow(6px, 6px, 15px, darkgrey);
+      transition: opacity 200ms ease-out, box-shadow 400ms ease-out;
+    }
   }
 }
