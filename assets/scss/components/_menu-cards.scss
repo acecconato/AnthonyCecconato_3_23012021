@@ -34,13 +34,23 @@
 
     h4, p {
       margin: 0;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
+  }
+
+  &__title {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    flex-basis: 80%;
   }
 
   &__content {
     flex: 1 1 auto;
     @include d-flex(space-between, flex-end);
     padding: 0 15px;
+    min-width: 0;
   }
 
   &__button {
