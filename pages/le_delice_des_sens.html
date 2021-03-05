@@ -4,12 +4,219 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ohmyfood - Le délice des sens</title>
+    <meta name="description" content="Commandez vos repas en ligne. Composez votre menu et réduisez votre temps d'attente
+    dans les restaurants ; vos menus sont préparés à l'avance !">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
           integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
           crossorigin="anonymous"/>
-    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+          integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/menu.css">
 </head>
 <body>
+<header>
+    <a href="../index.html"><i class="fas fa-arrow-left"></i></a>
+    <h1>ohmyfood</h1>
+</header>
 
+<main>
+    <div class="main-image">
+        <img src="../assets/img/sm/le_delice_des_sens-576.jpg"
+             srcset="../assets/img/sm/le_delice_des_sens-576.jpg 576w,
+             ../assets/img/md/le_delice_des_sens-992.jpg 992w,
+             ../assets/img/lg/le_delice_des_sens-1400.jpg 1400w"
+             sizes="100vw"
+             alt="Tartine avec des oeufs pochés et de la salade">
+    </div>
+
+    <section class="menu">
+        <div class="menu__content">
+            <div class="menu__title">
+                <h2>Le délice des sens</h2>
+                <button class="btn btn--like">
+                    <svg class="heart-main" viewBox="0 0 512 512" width="32">
+                        <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/>
+                    </svg>
+                    <svg class="heart-background" viewBox="0 0 512 512" width="32">
+                        <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/>
+                    </svg>
+                </button>
+            </div>
+
+            <h3>Entrées</h3>
+            <ul class="menu-cards">
+                <li class="menu-cards__item menu-cards__item--1">
+                    <a href="#">
+                        <div class="menu-cards__content">
+                            <div class="menu-cards__title">
+                                <h4>Tartare de thon</h4>
+                                <p>Assaisonné au yuzu</p>
+                            </div>
+                            <div class="menu-cards__price">
+                                <p class="price">25€</p>
+                            </div>
+                        </div>
+                        <div class="menu-cards__button">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </a>
+                </li>
+                <li class="menu-cards__item menu-cards__item--2">
+                    <a href="#">
+                        <div class="menu-cards__content">
+                            <div class="menu-cards__title">
+                                <h4>Bouchée de homard croustillant</h4>
+                                <p>Et sa farandole de petits légumes</p>
+                            </div>
+                            <div class="menu-cards__price">
+                                <p class="price">35€</p>
+                            </div>
+                        </div>
+                        <div class="menu-cards__button">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </a>
+                </li>
+                <li class="menu-cards__item menu-cards__item--3">
+                    <a href="#">
+                        <div class="menu-cards__content">
+                            <div class="menu-cards__title">
+                                <h4>Velouté de cèpes</h4>
+                                <p>Aux truffes</p>
+                            </div>
+                            <div class="menu-cards__price">
+                                <p class="price">20€</p>
+                            </div>
+                        </div>
+                        <div class="menu-cards__button">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+            <h3>Plats</h3>
+            <ul class="menu-cards">
+                <li class="menu-cards__item menu-cards__item--4">
+                    <a href="#">
+                        <div class="menu-cards__content">
+                            <div class="menu-cards__title">
+                                <h4>Poulet rôti aux herbes de provence</h4>
+                                <p>Et sa crème de truffe</p>
+                            </div>
+                            <div class="menu-cards__price">
+                                <p class="price">40€</p>
+                            </div>
+                        </div>
+                        <div class="menu-cards__button">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </a>
+                </li>
+                <li class="menu-cards__item menu-cards__item--5">
+                    <a href="#">
+                        <div class="menu-cards__content">
+                            <div class="menu-cards__title">
+                                <h4>Langouste rôtie</h4>
+                                <p>Et ses légumes de saison</p>
+                            </div>
+                            <div class="menu-cards__price">
+                                <p class="price">35€</p>
+                            </div>
+                        </div>
+                        <div class="menu-cards__button">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </a>
+                </li>
+                <li class="menu-cards__item menu-cards__item--6">
+                    <a href="#">
+                        <div class="menu-cards__content">
+                            <div class="menu-cards__title">
+                                <h4>Côte de boeuf angus</h4>
+                                <p>Et sa purée de panais</p>
+                            </div>
+                            <div class="menu-cards__price">
+                                <p class="price">44€</p>
+                            </div>
+                        </div>
+                        <div class="menu-cards__button">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+            <h3>Desserts</h3>
+            <ul class="menu-cards">
+                <li class="menu-cards__item menu-cards__item--7">
+                    <a href="#">
+                        <div class="menu-cards__content">
+                            <div class="menu-cards__title">
+                                <h4>Farandole de desserts</h4>
+                                <p>Du chef</p>
+                            </div>
+                            <div class="menu-cards__price">
+                                <p class="price">18€</p>
+                            </div>
+                        </div>
+                        <div class="menu-cards__button">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </a>
+                </li>
+                <li class="menu-cards__item menu-cards__item--8">
+                    <a href="#">
+                        <div class="menu-cards__content">
+                            <div class="menu-cards__title">
+                                <h4>Crème brulée</h4>
+                                <p>Revisitée</p>
+                            </div>
+                            <div class="menu-cards__price">
+                                <p class="price">22€</p>
+                            </div>
+                        </div>
+                        <div class="menu-cards__button">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </a>
+                </li>
+                <li class="menu-cards__item menu-cards__item--9">
+                    <a href="#">
+                        <div class="menu-cards__content">
+                            <div class="menu-cards__title">
+                                <h4>Tiramisu</h4>
+                                <p>À la noisette</p>
+                            </div>
+                            <div class="menu-cards__price">
+                                <p class="price">23€</p>
+                            </div>
+                        </div>
+                        <div class="menu-cards__button">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <a href="#" class="btn btn--primary">Commander</a>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__content">
+        <h2>ohmyfood</h2>
+        <ul>
+            <li><a href="#"><strong><i class="fas fa-utensils"></i> Proposez un restaurant</strong></a></li>
+            <li><a href="#"><strong><i class="fas fa-hands-helping"></i> Devenir partenaire</strong></a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="mailto:contact@anthony-cecconato.fr">Contact</a></li>
+        </ul>
+    </div>
+</footer>
 </body>
 </html>
