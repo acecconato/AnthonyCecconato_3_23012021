@@ -8,7 +8,7 @@
   @include from("lg") {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
 
@@ -52,7 +52,7 @@
     /* Animation */
     animation: fade-toggle 450ms ease-out forwards;
 
-    @for $i from 1 through 9 {
+    @for $i from 1 through 10 {
       &--#{$i} {
         animation-delay: (200ms) * $i;
       }
