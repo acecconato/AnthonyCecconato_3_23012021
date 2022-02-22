@@ -1,5 +1,7 @@
 # AnthonyCecconato_3_23012021
 
+Le but était de créer des animations sur une page web, sans utiliser de javascript mais uniquement les propriétés CSS3.
+
 ## Demo
 https://dw03.anthony-cecconato.fr/
 
